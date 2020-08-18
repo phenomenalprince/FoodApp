@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Go Food</string>
+    <string name="preferences_file_name">Go Food Preferences</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityLogin"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:src="@drawable/food_app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:id="@+id/etMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:inputType="number"
+            android:hint="Enter Mobile Number"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:layout_below="@id/imgLogo"
+            android:drawableStart="@drawable/ic_baseline_smartphone_24"
+            android:textColorHint="#000000"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            android:layout_below="@id/etMobileNo"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:inputType="textPassword"
+            android:hint="Enter Password"
+            android:maxLines="1"
+            android:drawableStart="@drawable/ic_baseline_lock_24"/>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPassword"
+            android:text="Log In"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#ffa533"
+            android:textColor="#ffffff"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/txtForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textSize="18sp"
+            android:layout_below="@id/btnLogin"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/txtCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Create New Account"
+            android:layout_marginBottom="25dp"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"/>
+
+</RelativeLayout>
